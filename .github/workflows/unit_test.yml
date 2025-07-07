@@ -26,6 +26,7 @@ jobs:
         if: always()
         run: |
           echo 'COVERAGE_REPORT<<EOF' >> $GITHUB_ENV
+          mkdir -p coverage          
           touch coverage/coverage.txt
           cat coverage/coverage.txt >> $GITHUB_ENV
           echo 'EOF' >> $GITHUB_ENV
