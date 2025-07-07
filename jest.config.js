@@ -9,19 +9,20 @@ module.exports = {
     ...tsJestTransformCfg,
   },
   testMatch: ["<rootDir>/test/**/*.spec.ts"],
-};
 
-collectCoverage = true;
+collectCoverage : true,
 
-collectCoverageFrom = ["src/**/*.ts"];
+collectCoverageFrom : ["src/**/*.ts"],
 
-coverageThreshold = {
+coverageThreshold : {
   global: {
     branches: 50,
     functions: 50,
     lines: 50,
     statements: 50,
   },
-};
+},
 
-coverageReporters = [["text", { file: "coverage.txt" }]];
+coverageReporters : [["text", { file: "coverage.txt" }]]
+
+};
