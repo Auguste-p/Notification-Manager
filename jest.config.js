@@ -19,3 +19,7 @@ coverageThreshold = {
     statements: 50,
     },
 }
+
+coverageReporters = [
+    ["text", { file: "coverage.txt" }]
+]
