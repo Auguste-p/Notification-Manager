@@ -83,7 +83,6 @@ jobs:
             if (botComment) {
                 await github.rest.issues.updateComment({
                     owner: context.repo.owner,
-                    Bot Settings > Actions > Workflow
                     repo: context.repo.repo,
                     comment_id: botComment.id,
                     body
